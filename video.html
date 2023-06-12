@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reproductor de Video</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="video-container">
+    <div id="upload-section">
+      <input type="file" id="file-input" accept="video/*">
+      <label for="file-input" id="file-label">Cargar archivo</label>
+      <div id="selected-file"></div>
+    </div>
+    <video id="video-player" controls></video>
+    <div id="controls">
+      <button id="play-btn">Iniciar</button>
+      <button id="pause-btn">Pausar</button>
+      <button id="volume-up-btn">Subir Volumen</button>
+      <button id="volume-down-btn">Bajar Volumen</button>
+    </div>
+  </div>
+
+  <div id="loading-overlay">
+    <div id="loading-modal">
+      <p id="loading-text">Cargando archivo...</p>
+      <button id="accept-btn">Aceptar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
